@@ -21,14 +21,3 @@ jobs:
         with:
           username: ${{ secrets.DOCKER_USERNAME }}
           password: ${{ secrets.DOCKER_PASSWORD }}
-
-      # Step 3: Build & push Docker image
-      - name: Build & push Docker image
-        uses: mr-smithers-excellent/docker-build-push@v6
-        with:
-          image: manthan010/dev-ops-git         # replace with your DockerHub repo/image
-          tags: v1,latest            # tags for your image
-          registry: docker.io        # replace if using custom registry
-          dockerfile: Dockerfile.ci     # your Dockerfile name
-          username: ${{ secrets.DOCKER_USERNAME }}
-          password: ${{ secrets.DOCKER_PASSWORD }}
