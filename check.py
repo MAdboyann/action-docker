@@ -12,11 +12,15 @@ def main():
         return
 
     if percentage >= 40:
-        print("Congratulations! You Passed ✅")
+        print(
+            "Congratulations! You Passed ✅"
+        )
     else:
-        print("Sorry! You Failed ❌")
+        print(
+            "Sorry! You Failed ❌"
+        )
 
 
-if __name__ == "---------------------------__main__---------------------------------":
+if __name__ == "__main__":
     main()
 
