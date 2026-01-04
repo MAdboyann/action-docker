@@ -1,6 +1,7 @@
-# pass_fail.py
+"""Determine whether a student passes or fails based on percentage."""
 
 def main():
+    """Prompt the user for a percentage and print pass or fail result."""
     try:
         percentage = float(input("Enter your percentage: "))
         if percentage < 0 or percentage > 100:
@@ -14,6 +15,7 @@ def main():
         print("Congratulations! You Passed ✅")
     else:
         print("Sorry! You Failed ❌")
+
 
 if __name__ == "__main__":
     main()
